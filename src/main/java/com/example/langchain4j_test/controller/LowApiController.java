@@ -15,7 +15,8 @@ public class LowApiController {
     private final ChatLanguageModel chatModel;
 
     // 使用 @Qualifier 注入名为 "doubao" 的 ChatModel Bean
-    public ChatController(@Qualifier("doubao") ChatLanguageModel chatModel) {
+    public ChatController(@Qualifier("doubao") ChatLanguageModel chatModel)
+    {
         this.chatModel = chatModel;
     }
 

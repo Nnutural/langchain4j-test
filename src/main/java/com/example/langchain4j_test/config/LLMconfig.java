@@ -22,7 +22,7 @@ public class LLMConfig
     public ChatModel Doubao()
     {
         return OpenAiChatModel.builder()
-                .apiKey(System.getenv("5cf34f76-814f-49ee-b84a-3515620ae78b")) // model id
+                .apiKey(System.getenv(apikey)) // model id
                 .modelName(modelName)
                 .baseUrl(baseUrl)
                 .build();
