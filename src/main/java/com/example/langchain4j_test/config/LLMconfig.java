@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Configuration;
 public class LLMConfig
 {
     @Bean(name = "doubao")
-    public ChatModel chatModelDoubao()
+    public ChatModel Doubao()
     {
         return OpenAiChatModel.builder()
-                .apiKey(System.getenv("doubao-seed-1-6-lite-251015")) // model id
+                .apiKey(System.getenv("5cf34f76-814f-49ee-b84a-3515620ae78b")) // model id
                 .modelName("Doubao-Seed-1.6-lite")
-                    .baseUrl("https://ark.cn-beijing.volces.com/api/v3/")
-                    .build();
+                .baseUrl("https://ark.cn-beijing.volces.com/api/v3/")
+                .build();
     }
 }
